@@ -12,6 +12,7 @@ button {
   padding: 10px;
   border-radius: 30px;
   cursor: pointer;
+  transition: background-color 0.5s ease; /*transizione per cambio colore*/
 }
 
 .yellow {
@@ -28,6 +29,7 @@ nav {
   align-content: center;
   padding: 1em;
   border-bottom: 1px solid black;
+  transition: background-color 0.5s ease; /*transizione per cambio colore*/
 }
 
 header nav ul {
@@ -41,6 +43,13 @@ header nav ul li {
   cursor: pointer;
 }
 
+.scrolled {
+  background-color: #ffffff; /*classe da applicare superato l'header il codice sta in js :) */
+}
+
+nav.scrolled button {
+  background-color: green;
+}
 /*------------------HERO------------------*/
 
 h1 {
@@ -246,6 +255,7 @@ aside {
   position: sticky;
   margin: auto;
   top: 5em;
+  align-items: flex-start;
 }
 
 #discover {
