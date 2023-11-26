@@ -1,4 +1,4 @@
-// funzione per applicare classe a nav (transizione da gialla a bianca)
+// -------------------funzione per applicare classe a nav (transizione da gialla a bianca)-----------------
 
 document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector("header");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// funzione per nascondere/mostrare casualmente le M
+// --------------------funzione per nascondere/mostrare casualmente le M---------------------------
 
 function getRandomNumber(min, max) {
   return Math.random() * (max - min) + min;

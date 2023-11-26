@@ -258,11 +258,6 @@ aside {
   align-items: flex-start;
 }
 
-#discover {
-  border-bottom: 1px solid black;
-  padding-bottom: 2em;
-}
-
 article h3 {
   font-weight: 900;
   font-size: 14px;
@@ -277,27 +272,26 @@ article h3 {
   border-radius: 3px;
 }
 
-div#help {
-  width: 10px;
-  display: flex;
-}
-
 div#help ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0 auto;
+  border-top: 1px solid #191919;
 }
 
 div#help li {
   margin-top: 2em;
   display: flex;
-  max-width: 200px;
-  padding-right: 20px;
+  margin-right: 20px;
   color: #191919;
-  font-size: 8px;
+  font-size: 12px;
   cursor: pointer;
 }
 
+div#help {
+  margin-top: 1.5em;
+}
 #nav-container {
   position: fixed;
   width: 100%;
