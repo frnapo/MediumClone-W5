@@ -187,11 +187,11 @@ article {
   max-width: 650px;
   flex-flow: row;
   align-items: center;
-  margin: 0 4em 3em 4em;
+  margin: 0 4em 6em 4em;
 }
 
 .articles img.articles-img {
-  width: 200px;
+  width: 250px;
   cursor: pointer;
   margin-inline: 1em;
 }
@@ -244,18 +244,16 @@ article {
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-top: 5em;
 }
 
 /*--------------------------------ASIDE-------------------------------*/
 
 aside {
   width: 350px;
-  display: flex;
-  flex-direction: column;
   position: sticky;
   margin: auto;
   top: 5em;
-  align-items: flex-start;
 }
 
 article h3 {
@@ -298,4 +296,63 @@ div#help {
   top: 0;
   overflow: hidden;
   z-index: 1;
+}
+
+/* ========================= MEDIA QUERY =============================*/
+
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 768px;
+  }
+
+  #artwork {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  svg#my-svg {
+    width: unset !important; /* non riuscivo a cambiare le proprieta' senza l'uso di important */
+    height: 400px !important;
+  }
+
+  br {
+    display: none;
+  }
+
+  h1 {
+    font-size: 72px;
+    white-space: nowrap;
+  }
+
+  div#hero {
+    padding-left: 2em;
+  }
+
+  div.trending {
+    margin: 1em;
+    max-width: 260px;
+  }
+
+  aside {
+    width: 768px;
+    position: unset;
+    margin-inline: 2em;
+  }
+  aside h3 {
+    margin-top: 3em;
+    font-size: 14px;
+  }
+
+  aside button {
+    font-size: 12px;
+  }
+
+  div#help ul {
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+  }
+
+  .articles-container {
+    margin-top: unset;
+  }
 }
